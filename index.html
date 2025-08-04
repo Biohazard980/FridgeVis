@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fridge Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Fridge Tracker</h1>
+    <form id="item-form">
+      <input type="text" id="item-name" placeholder="Item name" required />
+      <input type="date" id="expiration-date" required />
+      <input type="number" id="item-quantity" placeholder="Quantity" min="1" required />
+      <button type="submit">Add Item</button>
+    </form>
+
+    <div class="filter-options">
+      <label>
+        <input type="checkbox" id="show-expiring-only" /> Show Expiring Soon Only
+      </label>
+    </div>
+
+    <h2>Items in Fridge</h2>
+    <ul id="item-list"></ul>
+
+    <h2>Recipe Suggestions</h2>
+    <ul id="recipe-list"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
